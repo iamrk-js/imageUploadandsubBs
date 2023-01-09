@@ -1,0 +1,6 @@
+
+<button class="btn btn-outline-primary mr-3" (click)="fileUpload.click()">Upload File</button>
+<span>{{selectedFileName}}</span>
+<input type="file" name="" id="uploadFile" #fileUpload class="d-none"  (change)="selectFile($event)">
+
+<img [src]="imgInBase64Format" alt="" *ngIf="imgInBase64Format">
